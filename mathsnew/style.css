@@ -1,0 +1,763 @@
+*,*before,*::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: fit-content;
+    color: white;
+    overflow-x: hidden;
+}
+#menu{
+    width: 100%;
+    background-color: #021056;
+    padding: 5px;
+    height: 50px;
+
+}
+#menu_1{
+    display: inline-block;
+    width: 50%;
+}
+#logo{
+    margin-top: -15px;
+    height:80px;
+    width: 150px;
+    float: left;
+}
+#menu_1 h2{
+    float: left;
+    margin-left: -30px;
+    line-height: 50px;
+    color: white;
+    font-family: 'Roboto',sans-serif;
+}
+#menu_2{
+    float: right;
+    margin-right: 50px;
+    cursor:pointer;
+    line-height: 50px;
+}
+#menu_2 ul{
+    float: right;
+    position:relative;
+}
+#menu_2 ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 15px;
+    line-height: 35px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#menu_2 ul li a{
+    text-decoration: none;
+    color: #a0a0a0;
+    position: relative;
+    padding: 0px 5px;
+    font-family: 'poppins',sans-serif;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-right: 40px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    #menu_2 ul{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: #2b05df;
+        text-align: center;
+        left: -100%;
+        transition: all 0.5s;
+        z-index: 1;
+        top: 100px;
+    }
+    #menu_2 ul li{
+        display: block;
+    }
+    #menu_2 ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ #menu_2 ul{
+        left:0%;
+    }    
+}
+#menu_2 ul li a:after{
+    content:"";
+    position: absolute;
+    background: linear-gradient(135deg, #a454fd, #2b05df);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+#menu_2 ul li a:hover:after{
+    width: 100%;
+}
+#menu_2 ul li a:hover{
+    color: white;
+}
+#home{
+    clear: both;
+    
+}
+#home1{
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+    background: linear-gradient(135deg, #a454fd, #2b05df);
+    height:600px;
+    width: 70%;
+    position: absolute;
+    top: 58px;;
+} 
+#home1 h1{
+    font-family: 'Roboto',sans-serif;
+    margin-left: 100px;
+    margin-top: 130px;
+    font-size: 42px;
+}
+#home1 h3{
+    margin-left: 100px;
+    font-family: 'Roboto',sans-serif;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: normal;
+}
+#b1{
+    border: 1px solid white;
+    background: transparent;
+    padding: 12px 25px;
+    font-family: 'Roboto',sans-serif;
+    border-radius: 30px;
+    margin-left: 100px;
+    margin-top: 45px;
+    color: white;
+    font-weight:500;
+    font-size: 17px;
+}
+#b1:hover{
+    background-color: white;
+    color: black;
+}
+#home2{
+    clip-path: polygon(33% 0, 100% 0, 100% 100%, 0 100%);
+    display: block;
+    margin-top:-2px;
+    margin-left: 600px;
+}
+#home2 img{
+    width: 900px;
+    height: 600px;
+}
+#maths{
+    height: 300px;
+    position: relative;
+    top: 150px;
+    color: black;
+    margin-left: 100px;
+    font-family: 'Roboto',sans-serif;
+}
+#maths h5{
+    color: #BDBBBB;
+    font-size: 21PX;
+}
+#maths h2{
+    font-size: 28px;
+}
+hr{
+    background-color: #0000FF;
+    width: 210px;
+    height: 1.5px;
+    position: relative;
+    top: -20px;
+    left: 255px;
+}
+#maths img{
+    width: 340px;
+    height: 320px;
+    border-radius: 80%;
+    position: relative;
+    left:750px;
+    top: -160px;
+    border: 9px solid #0000FF;
+}
+#maths1{
+    background-image: url(images/3.jpg);
+    height: 250px;
+    width: 100%;
+    position: relative;
+    top: 250px;
+}
+#maths2{
+    position: relative;
+    top: 0px;
+    left:6%;
+    font-family: 'Roboto',sans-serif;
+    height: 100px;
+    width: 90%;
+}
+#div1{
+    width: 190px;
+    height: 170px;
+    background-color: white;
+    position: relative;
+    top: -80px;
+}
+#maths2 img{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    left: 15px;
+    border: 5px solid black;
+    border-style: double;
+}
+#div2{
+    width: 190px;
+    height: 170px;
+    background-color: white;
+    position: relative;
+    top: -250px;
+    left: 250px;
+}
+#div3{
+    width: 190px;
+    height: 170px;
+    background-color: white;
+    position: relative;
+    top: -420px;
+    left: 500px;
+}
+#div4{
+    width: 190px;
+    height: 170px;
+    background-color: white;
+    position: relative;
+    top: -590px;
+    left: 750px;
+}
+#div5{
+    width: 190px;
+    height: 170px;
+    background-color: white;
+    position: relative;
+    top: -760px;
+    left: 1000px;
+}
+#maths3{
+    display: inline-block;
+    position: relative;
+    top: -120px;
+    color: black;
+    font-family: 'Roboto',sans-serif;
+    width: 100%;
+    height: fit-content;
+}
+#div8{
+    position: relative;
+    top:-100px;
+    left: 80px;
+}
+#div9{
+    position: relative;
+    top:-120px;
+    left:375px;
+}
+#div10{
+    position: relative;
+    top:-142px;
+    left:615px;
+}
+#div11{
+    position: relative;
+    top:-162px;
+    left:875px;
+}
+#div12{
+    position: relative;
+    top:-182px;
+    left:1115px;
+}
+
+#maths22{
+    height:100px;
+    position: relative;
+    top: 20px;
+    margin-left:6%;
+    font-family: 'Roboto',sans-serif;
+}
+#div13{
+    width: 190px;
+    height: 180px;
+    background-color: white;
+    position: relative;
+    top: -70px;
+    padding-top: 10px;
+}
+#maths22 img{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    left: 15px;
+    border: 5px solid black;
+    border-style: double;
+    
+    
+}
+#div22{
+    width: 190px;
+    height: 170px;
+    background-color: white;
+    position: relative;
+    top: -260px;
+    left: 250px;
+    padding-top: 10px;
+    font-family: 'Roboto',sans-serif;
+}
+#div32{
+    width: 190px;
+    height: 170px;
+    background-color: white;
+    position: relative;
+    top: -440px;
+    left: 500px;
+    
+    padding-top: 10px;
+}
+#div42{
+    width: 190px;
+    height: 180px;
+    background-color: white;
+    position: relative;
+    top: -620px;
+    left: 750px;
+    
+    padding-top: 10px;
+}
+#div52{
+    width: 190px;
+    height: 140px;
+    background-color: white;
+    position: relative;
+    top: -810px;
+    left: 1000px;
+    padding-top: 10px;
+}
+#maths33{
+    position: relative;
+    top: 250px;
+    color: black;
+    margin-left: 115px;
+    font-family: 'Roboto',sans-serif;
+    width: 100%;
+    height: fit-content;
+}
+#div83{
+    position: relative;
+    top:-220px;
+    width: fit-content;
+}
+#div93{
+    position: relative;
+    top:-240px;
+    left:225px;
+    width: fit-content;
+}
+#div103{
+    position: relative;
+    top:-262px;
+    left:495px;
+    width: fit-content;
+}
+#div113{
+    position: relative;
+    top:-282px;
+    left:720px;
+    width: fit-content;
+}
+#div123{
+    position: relative;
+    top:-302px;
+    left:990px;
+    width: fit-content;
+}
+#bottom{
+    
+    position: relative;
+    top: 50px;
+    padding-left: 50px;
+    background-color: #021056;
+    width: 100%;
+    height: 200px;
+    margin-left: -10px;
+    padding-top: 30px;
+
+}
+#bottom h2{
+    float: left;
+    margin-left: -30px;
+    line-height: 35px;
+    color: white;
+    font-family: 'Roboto'sans-serif;
+}
+#bottom i{
+    position:relative;
+    left: 10px;
+    margin-top:40px;
+    background-color: white;
+    color:#021056;
+    border-radius: 30px;
+    padding: 5px;
+    text-align: center;
+}
+#bottom h4{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.submenu{
+    display: none;
+}
+#menu_2 ul li:hover .submenu{
+    display: block;
+    position:absolute; 
+    padding-top: 20px;
+    margin-left:40px;
+    background-color:#021056;
+    height: 100px;
+    width: 230px;
+    z-index: 1;
+    margin-top: -12px;
+}
+#menu_2 ul li:hover .submenu ul{
+    display: block;
+}
+#menu_2 ul li:hover .submenu ul li{
+    padding: 8px;
+    text-align: center;
+    margin-left: 6px;
+}
+#menu_2 ul li:hover .submenu ul li a{
+    font-size: 23px;
+}
+#chap::after{
+    background: none;
+        
+}
+@media screen and (max-width:767px) {   
+    body{
+        overflow-x:hidden;
+        width: 100%;
+        
+    }
+    #home2{
+        display: none;
+    }
+    #home1{
+        clip-path:none;
+        background: linear-gradient(135deg, #a454fd, #2b05df);
+        height:600px;
+        width: 100%;
+    } 
+    #menu{
+        width: 98%;
+    }
+    #home1 h1{
+        font-family: 'Roboto',sans-serif;
+        margin-left: 5px;
+        margin-top: 130px;
+        font-size: 35px;
+        width: 98%;
+        text-align: center;
+    }
+    #home1 h3{
+        margin-left: 5px;
+        font-family: 'Roboto',sans-serif;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: normal;
+        text-align: center;
+    }
+    #b1{
+        margin-left: 120px;
+    }
+    #maths{
+        height: 300px;
+        position: relative;
+        top: 600px;
+        color: black;
+        margin-left:5px;
+        font-family: 'Roboto',sans-serif;
+    }
+    #maths h5{
+        color: #BDBBBB;
+        font-size: 19PX;
+    }
+    #maths h2{
+        font-size: 24px;
+    }
+    hr{
+        background-color: #0000FF;
+        width: 150px;
+        height: 1.5px;
+        position: relative;
+        top: -15px;
+        left:215px;
+    }
+    #maths img{
+        display: none;
+    }
+    #maths1{
+        top: 500px;
+    }
+    #maths2{
+        margin-left:5%;
+    }
+    #maths2 img{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 15px;
+    border: 5px solid black;
+    border-style: double;
+}
+#div1{
+    position: relative;
+    top: 150px;
+    width: 140px;
+}
+#div1 img{
+    position: relative;
+    top: 45px;
+}
+#div2{
+    width: 140px;
+    height: 170px;
+    background-color: white;
+    position: relative;
+    top: -20px;
+    left: 150px;
+}
+#div2 img{
+    position: relative;
+    top: 45px;
+}
+#div3{
+    width: 190px;
+    height: 170px;
+    background-color: white;
+    position: relative;
+    top: -420px;
+    left: 500px;
+    display: none;
+}
+#div4{
+    width: 190px;
+    height: 170px;
+    background-color: white;
+    position: relative;
+    top: -590px;
+    left: 750px;
+    display: none;
+}
+#div5{
+    width: 190px;
+    height: 170px;
+    background-color: white;
+    position: relative;
+    top: -760px;
+    left: 1000px;
+    display: none;
+}
+#maths3{
+    display: inline-block;
+    position: relative;
+    top: -120px;
+    color: black;
+    font-family: 'Roboto',sans-serif;
+    width: 100%;
+    height: fit-content;
+}
+#div8{
+    position: relative;
+    top:160px;
+    left: 14%;
+    text-align: center;
+    width: 5%;
+}
+#div9{
+    position: relative;
+    top:130px;
+    left: 53%;
+    text-align: center;
+    width: 5%;
+}
+#div10{
+    position: relative;
+    top:-142px;
+    left:615px;
+    display: none;
+}
+#div11{
+    position: relative;
+    top:-162px;
+    left:875px;
+    display: none;
+}
+#div12{
+    position: relative;
+    top:-182px;
+    left:1115px;
+    display: none;
+}
+
+#maths22{
+    height:100px;
+    position: relative;
+    top: 20px;
+    margin-left:6%;
+    font-family: 'Roboto',sans-serif;
+}
+#div13{
+    width: 190px;
+    height: 180px;
+    background-color: white;
+    position: relative;
+    top: -70px;
+    padding-top: 10px;
+}
+#maths22 img{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 15px;
+    border: 5px solid black;
+    border-style: double;
+    
+    
+}
+#div13{
+    display: none;
+}
+#div22{
+    width: 190px;
+    height: 170px;
+    background-color: white;
+    position: relative;
+    top: -260px;
+    left: 0px;
+    padding-top: 10px;
+    font-family: 'Roboto',sans-serif;
+    display: none;
+}
+#div32{
+    width: 140px;
+    height: 170px;
+    background-color: white;
+    position: relative;
+    top: 220px;
+    left: 20px;
+    padding-top: 10px;
+}
+#div42{
+    width: 140px;
+    height: 180px;
+    background-color: white;
+    position: relative;
+    top:40px;
+    left: 46%;
+    padding-top: 10px;
+}
+#div52{
+    width: 190px;
+    height: 140px;
+    background-color: white;
+    position: relative;
+    top: -810px;
+    left: 1000px;
+    padding-top: 10px;
+    display: none;
+}
+#maths33{
+    position: relative;
+    top: 250px;
+    color: black;
+    margin-left: 115px;
+    font-family: 'Roboto',sans-serif;
+    width: 100%;
+    height: fit-content;
+}
+#div83{
+    position: relative;
+    top:-220px;
+    width: fit-content;
+    display: none;
+}
+#div93{
+    position: relative;
+    top:-240px;
+    left:225px;
+    width: fit-content;
+    display: none;
+}
+#div103{
+    position: relative;
+    top:10px;
+    left:-16%;
+    width: fit-content;
+    width: 40%;
+}
+#div113{
+    position: relative;
+    top:-10px;
+    left:25%;
+    width: fit-content;
+    width: 30%;
+}
+#div123{
+    position: relative;
+    top:-302px;
+    left:990px;
+    width: fit-content;
+    display: none;
+}
+#bottom{
+    display: none;
+    position: relative;
+    top: 350px;
+    padding-left: 50px;
+    background-color: #021056;
+    width: 100%;
+    height: 300px;
+    margin-left: -10px;
+    padding-top: 30px;
+
+}
+#bottom h2{
+    float: left;
+    margin-left: -30px;
+    line-height: 35px;
+    color: white;
+    font-family: 'Roboto'sans-serif;
+}
+#bottom h4{
+    margin-top: 30px;
+    text-align: center;
+    display: none;
+}
+}

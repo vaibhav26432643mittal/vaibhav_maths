@@ -1,0 +1,841 @@
+*,*before,*::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: fit-content;
+    font-family: 'Roboto',sans-serif;
+}
+#menu{
+    width:99.5%;
+    background-color: #021056;
+    padding: 5px;
+    height: 50px;
+    position: relative;
+    left: 0%;
+    z-index: 1;
+
+}
+#menu_1{
+    display: inline-block;
+    width: 50%;
+    line-height: 50px;
+}
+#logo{
+    margin-top: -15px;
+    height:80px;
+    width: 150px;
+    float: left;
+}
+#menu_1 h2{
+    float: left;
+    margin-left: -30px;
+    line-height: 50px;
+    color: white;
+    font-family: 'Roboto',sans-serif;
+}
+#menu_2{
+    float: right;
+    margin-right: 50px;
+    cursor:pointer;
+    line-height: 50px;
+}
+#menu_2 ul{
+    float: right;
+    position:relative;
+}
+#menu_2 ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 15px;
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#menu_2 ul li a{
+    text-decoration: none;
+    color: #a0a0a0;
+    position: relative;
+    padding: 0px 5px;
+    font-family: 'poppins',sans-serif;
+}
+#menu_2 ul li a:after{
+    content:"";
+    position: absolute;
+    background: linear-gradient(135deg, #a454fd, #2b05df);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+#menu_2 ul li a:hover:after{
+    width: 100%;
+}
+#menu_2 ul li a:hover{
+    color: white;
+}
+.submenu{
+    display: none;
+}
+#menu_2 ul li:hover .submenu{
+    display: block;
+    position:absolute; 
+    
+    padding-top: 20px;
+    margin-left:40px;
+    background-color:#021056;
+    height: 100px;
+    width: 230px;
+    z-index: 1;
+    margin-top: -12px;
+}
+#menu_2 ul li:hover .submenu ul{
+    display: block;
+}
+#menu_2 ul li:hover .submenu ul li{
+    padding: 8px;
+    text-align: center;
+    margin-left: 6px;
+}
+#menu_2 ul li:hover .submenu ul li a{
+    font-size: 23px;
+}
+#chap::after{
+    background: none;
+    
+}
+#heading{
+    position:relative;
+    left: 25%;
+    width: 80%;
+}
+#heading img{
+    width: 75%;
+    height: 200px;
+}
+#topics{
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+    left: 6%;
+}
+#topics a{
+    color: white;
+
+}
+#index{
+    height: 100%;
+    width: 20%;
+    background-color: #021056;
+    float: left;
+    position: fixed;
+    top:0px;
+}
+#index h1{
+    padding-top: 80px;
+    padding-bottom: 10px;
+    margin-left: 25%;
+    color: white;
+}
+#index ul li{
+    font-size: 22px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-left: 10px;
+}
+#index ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.design{
+    background-color: #021056;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+/* #area{
+    float: left;
+    width: 20%;
+    background-color: #021056;
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    margin-right: 20px;
+    border-radius: 20px;
+    line-height: 70px;
+    box-shadow: 7px 10px 5px #888888;
+}
+#peri{
+    float: left;
+    width: 20%;
+    background-color: #021056;
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    line-height: 70px;
+    border-radius: 20px;
+    margin-right: 20px;
+    box-shadow: 7px 10px 5px #888888 ;
+}
+#surarea{
+    float: left;
+    line-height: 70px;
+    width: 20%;
+    background-color: #021056;
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 7px 10px 5px #888888;
+}
+#volume{
+    float: left;
+    width: 20%;
+    background-color: #021056;
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    border-radius: 20px;
+    line-height: 70px;
+    box-shadow: 7px 10px 5px #888888;
+} */
+#areafor{
+    clear: both;
+    position: relative;
+    left: 20%;
+    margin-top: 50px;
+    width: 80%;
+}
+#areafor h1{
+    color: #021056;
+    font-size: 45px;
+    text-align: center;
+    border: 2px solid #021056;
+    border-radius: 20px;
+    width: 20%;
+    position: relative;
+    left: 35%;
+    margin-bottom: 80px;
+}
+#square{
+    position: relative;
+    left:2%;
+    top: 30px;
+}
+#square h2{
+    font-size: 40px;
+}
+#square img{
+    margin-top: 30px;
+    float: left;
+    width: 200px;
+    margin-right: 50px;
+}
+#square #i2{
+    margin-top: 70px;
+}
+#rec{
+    position: relative;
+    left: -44%;
+    top: 300px;
+}
+#rec h2{
+    font-size: 40px;
+}
+#rec img{
+    margin-top: 20px;
+    float: left;
+    width: 200px;
+    margin-right: 30px;
+}
+#rec #i3{
+    margin-top: 50px;
+    width: 220px;
+}
+
+#tri{
+    position: relative;
+    bottom: 240px;
+    float: left;
+    left: 30%;
+}
+#tri h2{
+    font-size: 40px;
+}
+#tri img{
+    margin-top: 50px;
+    float: left;
+    width: 200px;
+    margin-right: 00px;
+}
+#tri #i3{
+    margin-top: 70px;
+    width: 280px;
+}
+
+
+
+#cir{
+    position: relative;
+    left: -13%;
+    top:90px;
+}
+#cir h2{
+    font-size: 40px;
+    position: relative;
+    left:0px;
+}
+#cir img{
+    bottom: 280px;
+    width: 200px;
+    margin-right: 20px;
+    margin-top: 30px;
+    float: left;
+}
+#cir #i3{
+    position: relative;
+    left: 220px;
+    top: -130px;
+    width: 220px;
+    
+}
+
+
+
+
+#par{
+    position: relative;
+    left: 3%;
+    top: 30px;
+}
+#par h2{
+    font-size: 40px;
+}
+#par img{
+    margin-top: 30px;
+    float: left;
+    width: 200px;
+    margin-right: 30px;
+}
+#par #i2{
+    margin-top: 50px;
+}
+
+#pol{
+    position: relative;
+    left:-40%;
+    top: 200px;
+    bottom:10px;
+    width: 100%;
+    
+}
+#pol h2{
+    font-size: 35px;
+}
+#pol img{
+    width: 200px;
+    margin-right: 0px;
+    float:left;
+}
+#pol h4{
+    float: left;
+    margin-top: 20px;
+    font-size: 25px;
+    margin-left: 700px;
+    margin-top: -160px;
+    width: 100%;
+}
+#pol #h45{
+    float: left;
+    margin-top: -80px;
+    font-size: 25px;
+    width: 100%;
+}
+
+
+
+#gen{
+    position: relative;
+    left:-58%;
+    top: 400px;
+    bottom:10px;
+    width: 100%;
+}
+#gen h2{
+    font-size: 35px;
+}
+#gen img{
+    width: 200px;
+    margin-right: 0px;
+    float:left;
+    margin-left: 650px;
+    margin-top: -100px;
+}
+#gen #i2{
+    margin-top: 50px;
+    float: left;
+    position: relative;
+    left: 200px;
+    bottom: 200px;
+    width: 500px;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+#peri{
+    clear: both;
+    position: relative;
+    left: 20%;
+    top: 300px;
+    margin-top: 50px;
+    width: 80%;
+}
+#peri h1{
+    color: #021056;
+    font-size: 45px;
+    text-align: center;
+    border: 2px solid #021056;
+    border-radius: 20px;
+    width: 23%;
+    position: relative;
+    left: 35%;
+    margin-bottom: 80px;
+}
+#square2{
+    position: relative;
+    left:2%;
+    top: 30px;
+}
+#square2 h2{
+    font-size: 40px;
+}
+#square2 img{
+    margin-top: 30px;
+    float: left;
+    width: 200px;
+    margin-right: 0px;
+}
+#square2 #i2{
+    margin-top: 70px;
+}
+#rec2{
+    position: relative;
+    left: -35%;
+    top: 250px;
+}
+#rec2 h2{
+    font-size: 40px;
+}
+#rec2 img{
+    margin-top: 20px;
+    float: left;
+    width: 300px;
+}
+#rec2 #i3{
+    margin-top: 50px;
+    width: 350px;
+}
+
+#tri2{
+    position: relative;
+    bottom: 230px;
+    float: left;
+    left: 45%;
+
+}
+#tri2 h2{
+    font-size: 40px;
+}
+#tri2 img{
+    margin-top: 50px;
+    float: left;
+    width: 200px;
+    margin-right: -10px;
+}
+#tri2 h3{
+    margin-top: 90px;
+    width: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#sa{
+    clear: both;
+    position: relative;
+    left: 20%;
+    top: 350px;
+    margin-top: 50px;
+    width: 80%;
+}
+#sa h1{
+    color: #021056;
+    font-size: 45px;
+    text-align: center;
+    border: 2px solid #021056;
+    border-radius: 20px;
+    width: 30%;
+    position: relative;
+    left: 35%;
+    margin-bottom: 80px;
+}
+#cube{
+    position: relative;
+    left: 1%;
+
+}
+#cube h2{
+    font-size: 40px;
+    
+}
+#cube img{
+    position: relative;
+    left: 3%;
+    top: 20px;
+    width: 400px;
+}
+#cube #i2{
+    width: 260px;
+}
+
+#cuboid{
+    position: relative;
+    left: 1%;
+
+}
+#cuboid h2{
+    font-size: 40px;
+}
+#cuboid img{
+    position: relative;
+    left: 2%;
+    top: 20px;
+    width: 300px;
+}
+#cuboid h3{
+    margin-left: 350px;
+    margin-top: -200px;
+}
+
+#cyl{
+    position: relative;
+    left: 1%;
+    top: 40px;
+}
+#cyl h2{
+    font-size: 40px;
+}
+#cyl img{
+    position: relative;
+    left: 2%;
+    top: 20px;
+}
+.design2{
+    display: none;
+}
+#squarehead:hover .design2{
+    display: block;
+}
+#squarehead2:hover .design2{
+    display: block;
+}
+#squarehead3:hover .design2{
+    display: block;
+}
+
+
+
+
+@media (min-width:10px) and (max-width:767px) 
+{   
+    #index{        
+        display: none;
+        width: 100%;
+    }
+    #heading{
+        align-items: center;
+        position: static;
+        width: 100%;
+    }
+    #heading img{
+        width: 100%;
+    }
+    #areafor{
+        width: 100%;
+        left: 0%;
+    }
+    #areafor h1{
+        color: #021056;
+        font-size: 40px;
+        border: 2px solid #021056;
+        border-radius: 20px;
+        width: 28%;
+        position: relative;
+        left: 35%;
+        margin-bottom: 80px;
+    }
+    #square{
+        position: relative;
+        top: 30px;
+        width: auto;
+        left: 6%;
+    }
+    #square h2{
+        font-size: 40px;
+    }
+    #square img{
+        margin-top: 30px;
+        width: 200px;
+        margin-right: -20px;
+    }
+    #square #i2{
+        width: 200px;
+        
+        position: absolute;
+    }
+    #rec{
+        position: relative;
+        left: -41%;
+        top: 300px;
+    }
+    #rec h2{
+        font-size: 40px;
+    }
+    #rec img{
+        float: left;
+        width: 200px;
+        margin-right: 40px;
+        position: relative;
+        left: 46%;
+        margin-top: -200px;
+    }
+    #rec #i3{
+        float: left;
+        width: 240px;
+        left:330px ;
+        top:-5px;
+        position: absolute;
+    }
+    
+    #tri{
+        position: relative;
+        top:300px;
+        float: left;
+        left: 8%;
+    }
+    #tri h2{
+        font-size: 40px;
+    }
+    #tri img{
+        float: left;
+        width: 200px;
+        position: absolute;
+    }
+    #tri #i3{
+        margin-top: 70px;
+        width: 280px;
+        margin-left: 110px;
+    }
+    #cir{
+        position: relative;
+        left: -35%;
+        top:750px;
+    }
+    #cir h2{
+        font-size: 40px;
+    }
+    #cir img{
+        position: absolute;
+        top: 50px;
+        width: 190px;
+        margin-right: 20px;
+        margin-top: 30px;
+        float: left;
+    }
+    #cir #i3{
+        position: absolute;
+        left: 350px;
+        top: 80px;
+        width: 180px;
+        
+    }
+    
+    
+    
+    
+    #par{
+        position: relative;
+        left: 8%;
+        top:800px;
+    }
+    #par h2{
+        font-size: 40px;
+    }
+    #par img{
+        margin-top: 30px;
+        float: left;
+        width: 160px;
+        margin-right: 30px;
+    }
+    #par #i2{
+
+        position: absolute;
+    }
+    
+    #pol{
+        position: relative;
+        left:-40%;
+        top:1000px;
+        bottom:10px;
+        width: 100%;
+        
+    }
+    #pol h2{
+        font-size: 35px;
+    }
+    #pol img{
+        width: 200px;
+        margin-right: 0px;
+        float:left;
+    }
+    #pol h4{
+        float: left;
+        margin-top: 20px;
+        font-size: 25px;
+        margin-left: 700px;
+        margin-top: -160px;
+        width: 100%;
+    }
+    #pol #h45{
+        float: left;
+        margin-top: -80px;
+        font-size: 25px;
+        width: 100%;
+    }
+    
+    
+    
+    #gen{
+        position: relative;
+        left:-58%;
+        top:1500px;
+        bottom:10px;
+        width: 100%;
+    }
+    #gen h2{
+        font-size: 35px;
+    }
+    #gen img{
+        width: 200px;
+        margin-right: 0px;
+        float:left;
+        margin-left: 650px;
+        margin-top: -100px;
+    }
+    #gen #i2{
+        margin-top: 50px;
+        float: left;
+        position: relative;
+        left: 200px;
+        bottom: 200px;
+        width: 500px;
+        height: 200px;
+    }
+
+    /* #peri{
+        top: 5000px;
+        left: -50%;
+    }
+    #peri h1{
+        color: #021056;
+        font-size: 45px;
+        text-align: center;
+        border: 2px solid #021056;
+        border-radius: 20px;
+        width: 35%;
+        position: relative;
+        left: 0%;
+        margin-bottom: 80px;
+    }*/
+    #square2{
+        position: relative;
+        left:0%;
+        top: 30px;
+    }
+    #square2 h2{
+        font-size: 40px;
+    }
+    #square2 img{
+        margin-top: 30px;
+        width: 200px;
+    }
+    #square2 #i2{
+        margin-top: 70px;
+    }/*
+    #rec2{
+        position: relative;
+        left: -35%;
+        top: 250px;
+    }
+    #rec2 h2{
+        font-size: 40px;
+    }
+    #rec2 img{
+        margin-top: 20px;
+        float: left;
+        width: 300px;
+    }
+    #rec2 #i3{
+        margin-top: 50px;
+        width: 350px;
+    }
+    
+    #tri2{
+        position: relative;
+        bottom: 230px;
+        float: left;
+        left: 45%;
+    
+    }
+    #tri2 h2{
+        font-size: 40px;
+    }
+    #tri2 img{
+        margin-top: 50px;
+        float: left;
+        width: 200px;
+        margin-right: -10px;
+    }
+    #tri2 h3{
+        margin-top: 90px;
+        width: 600px;
+    } */
+}

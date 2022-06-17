@@ -1,0 +1,741 @@
+*,*before,*::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: fit-content;
+    font-family: 'Roboto',sans-serif;
+    overflow-x:hiddEn;
+}
+#menu{
+    width: 100%;
+    background-color: #021056;
+    padding: 5px;
+    height: 50px;
+    position: relative;
+    left: 0%;
+    z-index: 1;
+
+}
+#menu_1{
+    display: inline-block;
+    width: 50%;
+    line-height: 50px;
+}
+#logo{
+    margin-top: -15px;
+    height:80px;
+    width: 150px;
+    float: left;
+}
+#menu_1 h2{
+    float: left;
+    margin-left: -30px;
+    line-height: 50px;
+    color: white;
+    font-family: 'Roboto',sans-serif;
+}
+#menu_2{
+    float: right;
+    margin-right: 50px;
+    cursor:pointer;
+    line-height: 50px;
+}
+#menu_2 ul{
+    float: right;
+    position:relative;
+}
+#menu_2 ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 15px;
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#menu_2 ul li a{
+    text-decoration: none;
+    color: #a0a0a0;
+    position: relative;
+    padding: 0px 5px;
+    font-family: 'poppins',sans-serif;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-right: 40px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    #menu_2 ul{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: #2b05df;
+        text-align: center;
+        left: -100%;
+        transition: all 0.5s;
+        z-index: 1;
+        top: 100px;
+    }
+    #menu_2 ul li{
+        display: block;
+    }
+    #menu_2 ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ #menu_2 ul{
+        left:0%;
+    }    
+}
+#menu_2 ul li a:after{
+    content:"";
+    position: absolute;
+    background: linear-gradient(135deg, #a454fd, #2b05df);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+#menu_2 ul li a:hover:after{
+    width: 100%;
+}
+#menu_2 ul li a:hover{
+    color: white;
+}
+.submenu{
+    display: none;
+}
+#menu_2 ul li:hover .submenu{
+    display: block;
+    position:absolute; 
+    
+    padding-top: 20px;
+    margin-left:40px;
+    background-color:#021056;
+    height: 100px;
+    width: 230px;
+    z-index: 1;
+    margin-top: -12px;
+}
+#menu_2 ul li:hover .submenu ul{
+    display: block;
+}
+#menu_2 ul li:hover .submenu ul li{
+    padding: 8px;
+    text-align: center;
+    margin-left: 6px;
+}
+#menu_2 ul li:hover .submenu ul li a{
+    font-size: 23px;
+}
+#chap::after{
+    background: none;
+    
+}
+#heading h1{
+    font-size: 40px;
+    position: relative;
+    left: 45%;
+    top: 15px;
+}
+#index{
+    height: 100%;
+    width: 20%;
+    background-color: #021056;
+    float: left;
+    position: fixed;
+    top:0px;
+}
+#index h1{
+    padding-top: 80px;
+    padding-bottom: 10px;
+    margin-left: 25%;
+    color: white;
+}
+#index ul li{
+    font-size: 22px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-left: 10px;
+}
+#index ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.design{
+    background-color: #021056;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+#content{
+    width: 75%;
+    float: right;
+}
+#content h2{
+    color: #2b05df;
+}
+#cp{
+    margin-top:50px;
+    margin-left: -45px;
+}
+#content p{
+    width: 45%;
+    margin-top: 10px;
+    font-size: 20px;
+    float: left;
+}
+#cp img{
+    float:left;
+    width: 500px;
+    height: 220px;
+    position: relative;
+    top: 100px;
+    left: 20px;
+    border: 2px solid black;
+}
+#sp{
+    margin-left: -45px;
+    width: 100%;
+}
+#p{
+    float: left;
+    width: 100%;
+    margin-left: -45px;
+    margin-top: 80px;
+}
+#p img{
+    position: relative;
+    left: 400px;
+    top:-110px;
+    width: 600px;
+    height: 250px;
+}
+#pp{
+    float: left;
+    width: 100%;
+    margin-left: -45px;
+    margin-top: -230px;
+}
+#lp{
+    float: left;
+    width: 100%;
+    margin-left: -45px;
+    margin-top: -230px;
+}
+#l{
+    float: left;
+    width: 100%;
+    margin-left: -45px;
+    margin-top: -70px;
+}
+#l img{
+    position: relative;
+    left: 400px;
+    top:-110px;
+    width: 600px;
+    height: 250px;
+}
+#sp2{
+    float: left;
+    width: 100%;
+    margin-left: -45px;
+    margin-top: -50px;
+}
+#sp2 img{
+    width: 45%;
+}
+#img1{
+    float: left;
+    margin-top: 20px;
+}
+#img2{
+    float: left;
+}
+#cp2{
+    float: left;
+    width: 100%;
+    margin-left: -45px;
+    margin-top: 50px;
+}
+#cp2 img{
+    width: 35%;
+    
+}
+#img12{
+    float: left;
+    height: 130px;
+    margin-top: 15px;
+}
+#img22{
+    float: left;
+    height: 120px;
+    margin-top: 15px;
+}
+#mp{
+    float: left;
+    width: 100%;
+    margin-left: -45px;
+    margin-top: 70px;
+}
+#mp img{
+    width: 350px;
+    height: 150px;
+    margin-left: 20px;
+}
+#d{
+    float: left;
+    width: 100%;
+    margin-left: -45px;
+    margin-top: 70px;
+}
+#d img{
+    width: 450px;
+}
+#dp{
+    float: left;
+    width: 100%;
+    margin-left: -45px;
+    margin-top: 70px;
+}
+#dp img{
+    width: 450px;
+    margin-left: -20px;
+}
+#fsp{
+    float: left;
+    width: 100%;
+    margin-left: -45px;
+    margin-top: 50px;
+}
+#fsp img{
+    width: 450px;
+    margin-left: -20px;
+}
+#fmp{
+    float: left;
+    width: 100%;
+    margin-left: -45px;
+    margin-top: 50px;
+}
+#fmp img{
+    width: 400px;
+    margin-left: -20px;
+}
+
+
+
+
+
+
+@media (min-width:10px) and (max-width:767px) 
+{   
+    body{
+        overflow-x:hidden;
+    }
+    #menu{
+        width: 98%;
+    }
+    #menu_1 h2{
+        color: white;
+        float: left;
+        
+    }
+    #logo{
+        margin-top: -15px;
+        height:80px;
+        width: 150px;
+        float: left;
+        margin-left: -50px;
+    }
+    #menu_2{
+        
+        font-size: 20px;
+        background-color: #021056;
+        
+    }
+    #menu_2 ul li{
+        font-size: 12px;
+        margin-right: 0px;
+    }
+    #heading{
+        width: 80vw;
+        position: relative;
+        right: 120px;
+    }
+    #heading h1{
+        font-size:30px;
+        top:100px;
+
+    }
+
+    #index{        
+        display: none;
+        
+    }
+
+    #content{
+        width: 75%;
+        float: right;
+        margin-top: 100px;
+        margin-left: 0px;
+        
+    }
+    #content p{
+        width: 120%;
+        margin-top: 10px;
+        font-size: 20px;
+        float: none;
+    }
+    #cp p{
+        width: 70%;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        float: none;
+
+    }
+    #sp{
+        margin-top: 10px;
+    }
+    #content h2{
+        color: #2b05df;
+        font-size: 20px;
+        width: 100%;
+    }
+    #cp,#sp,#p,#pp,#l,#lp,#cp2,#sp2,#mp,#d,#dp,#fsp,#fmp{
+        margin-left: -28%;
+    }
+    #cp img{
+        float: none;
+        width: 60%;
+        height: 100px;
+        position: relative;
+        top: 0px;
+        left: 15%;
+    }
+    #lp{
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    #l img{
+        position: relative;
+        left: -20px;
+        top:0px;
+        width: 120%;
+        height: 150px;
+    }
+    #mp img{
+        position: relative;
+        left: -20px;
+        top:20px;
+        width: 120%;
+        height: 150px;
+    }
+    #d img{
+        position: relative;
+        left: -20px;
+        top:20px;
+        width: 85%;
+        height: 150px;
+    }
+    #dp img{
+        position: relative;
+        left: 10px;
+        top:20px;
+        width: 85%;
+        height: 150px;
+    }
+    #p img{
+        position: relative;
+        left: -20px;
+        top:0px;
+        width: 120%;
+        height: 150px;
+    }
+    #fsp img{
+        position: relative;
+        left: 10px;
+        top:20px;
+        width: 85%;
+        height: 150px;
+    }
+    #fmp img{
+        position: relative;
+        top:20px;
+        width: 85%;
+        height: 150px;
+    }
+    #pp{
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    #menu_2{
+        float: right;
+        margin-right: 160px;
+        cursor:pointer;
+        
+    }
+
+
+    #sp2 img{
+        width: 70%;
+        margin-top: 10px;
+    }
+    #img1{
+        float: none;
+        margin-top: 20px;
+        
+    }
+    #img2{
+        float: none;
+        position: relative;
+        left: -9px;
+    }
+    #cp2 img{
+        width: 70%;
+        margin-top: 10px;
+        height: 100px;
+        float: none;
+    }
+
+    #img12{
+        float: none;
+        margin-top: 20px;
+    }
+    #img22{
+        float: none;
+    }
+    #d img{
+        width: 100%;
+        height: 50px;
+    }
+    #dp img{
+        width: 100%;
+        height: 100px;
+    }
+    #fsp img{
+        width: 120%;
+    }
+    #fmp img{
+        height: 100px;
+        margin-top: -20px;
+        padding-bottom: 20px;
+        width: 120%;
+    }
+}
+
+
+
+@media (min-width:768px) and (max-width:1280px) 
+{
+    body{
+        overflow-x:hidden;
+    }
+    #menu{
+        width: 120%;
+    }
+    #menu_1 h2{
+        color: white;
+        float: left;
+        
+    }
+    #logo{
+        margin-top: -15px;
+        height:80px;
+        width: 150px;
+        float: left;
+        margin-left: -50px;
+    }
+    #menu_2{
+        
+        font-size: 20px;
+        background-color: #021056;
+        
+    }
+    #menu_2 ul li{
+        font-size: 12px;
+        margin-right: 0px;
+    }
+    #heading{
+        width: 100%;
+        position: relative;
+        right: 120px;
+    }
+    #heading h1{
+        font-size:40px;
+        top:50px;
+
+    }
+
+    #index{        
+        display: none;
+        
+    }
+
+    #content{
+        width: 75%;
+        float: right;
+        margin-top: 100px;
+        margin-left: 0px;
+        
+    }
+    #content p{
+        width: 120%;
+        margin-top: 10px;
+        font-size: 20px;
+        float: none;
+    }
+    #cp p{
+        width: 70%;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        float: none;
+
+    }
+    #sp{
+        margin-top: 10px;
+    }
+    #content h2{
+        color: #2b05df;
+        font-size: 25px;
+        width: 120%;
+    }
+    #cp,#sp,#p,#pp,#l,#lp,#cp2,#sp2,#mp,#d,#dp,#fsp,#fmp{
+        margin-left: -28%;
+    }
+    #cp img{
+        float: none;
+        width: 60%;
+        height: 100px;
+        position: relative;
+        top: 0px;
+        left: 15%;
+    }
+    #lp{
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    #l img{
+        position: relative;
+        left: -20px;
+        top:0px;
+        width: 120%;
+        height: 150px;
+    }
+    #mp img{
+        position: relative;
+        left: -20px;
+        top:20px;
+        width: 120%;
+        height: 150px;
+    }
+    #d img{
+        position: relative;
+        left: -20px;
+        top:20px;
+        width: 85%;
+        height: 150px;
+    }
+    #dp img{
+        position: relative;
+        left: 10px;
+        top:20px;
+        width: 85%;
+        height: 150px;
+    }
+    #p img{
+        position: relative;
+        left: -20px;
+        top:0px;
+        width: 120%;
+        height: 150px;
+    }
+    #fsp img{
+        position: relative;
+        left: 10px;
+        top:20px;
+        width: 85%;
+        height: 150px;
+    }
+    #fmp img{
+        position: relative;
+        top:20px;
+        width: 85%;
+        height: 150px;
+    }
+    #pp{
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    #menu_2{
+        float: right;
+        margin-right: 160px;
+        cursor:pointer;
+        
+    }
+
+
+    #sp2 img{
+        width: 70%;
+        margin-top: 10px;
+    }
+    #img1{
+        float: none;
+        margin-top: 20px;
+        
+    }
+    #img2{
+        float: none;
+        position: relative;
+        left: -9px;
+    }
+    #cp2 img{
+        width: 70%;
+        margin-top: 10px;
+        height: 100px;
+        float: none;
+    }
+
+    #img12{
+        float: none;
+        margin-top: 20px;
+    }
+    #img22{
+        float: none;
+    }
+    #d img{
+        width: 100%;
+        height: 50px;
+    }
+    #dp img{
+        width: 100%;
+        height: 100px;
+    }
+    #fsp img{
+        width: 120%;
+    }
+    #fmp img{
+        height: 100px;
+        margin-top: -20px;
+        padding-bottom: 20px;
+        width: 120%;
+    }
+}
